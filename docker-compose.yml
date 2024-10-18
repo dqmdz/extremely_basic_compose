@@ -1,0 +1,8 @@
+services:
+  flask-service:
+    build: ./flask-service
+
+  node-service:
+    build: ./node-service
+    depends_on:
+      - flask-service
